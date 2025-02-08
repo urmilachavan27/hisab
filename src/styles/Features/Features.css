@@ -1,0 +1,311 @@
+:root {
+  --primary-color: #2471a3;
+  --black: black;
+  --white: white;
+}
+
+.features-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidemenu {
+  width: 100% !important;
+  background-color: #f5efef !important;
+
+}
+
+.menu-btn {
+  position: fixed;
+  top: 65px;
+  right: 35px;
+  /* left: 15px; */
+  z-index: 1000;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  left: -250px;
+  top: 65px;
+  height: 100vh;
+  width: 250px;
+  background-color: #f5efef;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+  transition: left 0.3s ease-in-out;
+}
+
+/* Show Sidebar when open */
+.sidebar.open {
+  left: 0;
+}
+
+/* Mobile Responsiveness */
+@media (min-width: 768px) {
+
+  .menu-btn {
+    display: none;
+    /* Hide menu button on larger screens */
+  }
+
+  .sidebar {
+    left: 0;
+    /* Sidebar always visible on large screens */
+  }
+
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar h1 {
+  text-align: center;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 18px;
+  color: gray;
+
+}
+
+.sidebar nav ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: gray;
+  gap: 10px;
+}
+
+.sidebar nav ul li a:hover {
+  padding-left: 10px;
+  transition: all 0.3s;
+}
+
+.sidebar nav ul li a.active {
+  color: black;
+}
+
+.content {
+  top: 0;
+  margin-left: 250px;
+  padding: 20px;
+  overflow-y: auto;
+  width: calc(100% - 250px);
+}
+
+.content section {
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .content section {
+    padding: 20px;
+  }
+}
+
+h2 {
+  color: var(--primary-color);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.content section img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.feature-h2 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 25px;
+}
+
+.invoicing-p,
+.expense-p,
+.contact-p,
+.banking-p {
+  text-align: center;
+  color: gray;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.payment-p {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.multicurrency-p {
+  color: gray;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.inventory-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.inventory-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.inventory-content,
+.inventory-content2 {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.inventory-im {
+  width: 100px;
+  /* Adjust as needed */
+  height: auto;
+}
+
+.inventory-text {
+  font-size: 18px;
+  /* font-weight: bold; */
+  margin: 10px 0;
+  color: gray;
+  text-align: center;
+}
+
+.inventory-section h2 {
+  color: var(--primary-color);
+}
+
+.multicurrency-h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.automatic-ewaybill-p {
+  text-align: center;
+  font-size: 20px;
+  color: gray;
+  margin-top: 20px;
+}
+
+.automatic-einvoice-p {
+  text-align: center;
+  font-size: 20px;
+  color: gray;
+  margin-top: 20px;
+}
+.currency-p{
+  text-align: center;
+  font-size: 20px;
+  color: gray;
+}
+
+
+.collaborate-p{
+  text-align: center;
+  font-size: 20px;
+  color: gray;
+  margin-top: 20vh;
+}
+
+
+.accounting-p {
+  color: gray;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+.reports-container {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  /* max-width: 900px; */
+  margin: auto;
+}
+
+.reports-main {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reports-main-img {
+  width: 70% !important;
+  border-radius: 8px;
+}
+
+.reports-text {
+  color: gray;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.reports-sub {
+  text-align: center;
+  width: 100%;
+}
+
+.reports-sub-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.reports-sub-item {
+  width: 45%;
+  text-align: center;
+}
+
+.reports-sub-img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.other-img {
+  width: 60%;
+  /* Adjust width as needed */
+  max-width: 600px;
+  /* Set a max width */
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  /* Center the image */
+  border-radius: 8px;
+  /* Optional for rounded corners */
+}
+
+.sidebar nav ul li a.active {
+  color: #007bff;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
