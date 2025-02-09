@@ -3,17 +3,21 @@
   --black: black;
   --white: white;
 }
-
-.features-container {
-  display: flex;
-  height: 100vh;
+.containerr{
+  max-width: 1180px !important;
+  margin: 0px auto !important;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
 }
+
+
 
 .sidemenu {
   width: 100% !important;
   background-color: #f5efef !important;
 
 }
+
 
 .menu-btn {
   position: fixed;
@@ -26,19 +30,30 @@
   font-size: 24px;
   cursor: pointer;
 }
-
-/* Sidebar Styles */
 .sidebar {
-  position: fixed;
-  left: -250px;
-  top: 65px;
-  height: 100vh;
+  position: absolute;
+  left: 0;
   width: 250px;
-  background-color: #f5efef;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-  transition: left 0.3s ease-in-out;
+  height: 100vh; 
+  overflow-y: auto; 
+  background-color: #ecf0f1;
+  transition: all 0.3s ease-in-out;
 }
+
+.fixed-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh; 
+  overflow-y: auto; 
+  background-color: #ecf0f1;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+
+}
+
+
 
 /* Show Sidebar when open */
 .sidebar.open {
@@ -62,7 +77,8 @@
 
 .sidebar nav ul {
   list-style-type: none;
-  padding: 0;
+  padding: 15px;
+  
 }
 
 .sidebar h1 {
@@ -70,7 +86,8 @@
 }
 
 .sidebar nav ul li {
-  margin-bottom: 18px;
+  margin-bottom: 28px;
+  /* margin-top: 28px; */
   color: gray;
 
 }
@@ -87,29 +104,33 @@
 .sidebar nav ul li a:hover {
   padding-left: 10px;
   transition: all 0.3s;
+  color: #007bff;
+  cursor: pointer;
+
 }
 
 .sidebar nav ul li a.active {
-  color: black;
+  color: #007bff;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  font-weight: 500;
 }
 
 .content {
   top: 0;
   margin-left: 250px;
-  padding: 20px;
-  overflow-y: auto;
-  width: calc(100% - 250px);
+  /* padding: 20px; */
+
 }
 
 .content section {
   padding: 30px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   background-color: #ecf0f1;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Mobile responsiveness */
 @media (max-width: 768px) {
   .content {
     margin-left: 0;
@@ -185,13 +206,11 @@ h2 {
 
 .inventory-im {
   width: 100px;
-  /* Adjust as needed */
   height: auto;
 }
 
 .inventory-text {
   font-size: 18px;
-  /* font-weight: bold; */
   margin: 10px 0;
   color: gray;
   text-align: center;
@@ -244,9 +263,7 @@ h2 {
 
 .reports-container {
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
-  /* max-width: 900px; */
   margin: auto;
 }
 
@@ -292,20 +309,9 @@ h2 {
 
 .other-img {
   width: 60%;
-  /* Adjust width as needed */
   max-width: 600px;
-  /* Set a max width */
   height: auto;
   display: block;
   margin: 10px auto;
-  /* Center the image */
   border-radius: 8px;
-  /* Optional for rounded corners */
-}
-
-.sidebar nav ul li a.active {
-  color: #007bff;
-  font-weight: bold;
-  background-color: #f0f0f0;
-  border-radius: 5px;
 }
