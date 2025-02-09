@@ -17,7 +17,7 @@ const Hero = () => {
             </p>
             <div className="d-flex gap-3">
               <Link href="" className="btn2 ">
-                GET STARTED FREE
+                GET STARTED FREE.
               </Link>
               <button className="btn btn-outline-secondary">
                 Watch demo video
