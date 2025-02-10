@@ -1,27 +1,31 @@
-
 :root {
   --primary-color: #2471a3;
   --black: black;
   --white: white;
 }
 
-.accountingsoftware-heading span{
-color: gray;
+
+/* FIRST SECTION  START  CSS*/
+.accountingsoftware-heading span {
+  color: gray;
 }
+
 .accountingsoftware-heading {
-color: var(--black);
-font-weight: bold;
-word-spacing: 5px;
-font-size: 35px;
-line-height: 40px;
+  color: var(--black);
+  font-weight: bold;
+  word-spacing: 5px;
+  font-size: 35px;
+  line-height: 40px;
 }
-.accountingsoftware-p{
-  font-size: 17px;
+
+.accountingsoftware-p {
+  font-size: 16px;
   line-height: 30px;
-  margin-top: 20px;
+  margin-top: 25px;
   color: #212529;
 }
-.accountingsoftware-btn{
+
+.accountingsoftware-btn {
   width: 50%;
   padding: 12px;
   color: var(--white);
@@ -32,17 +36,204 @@ line-height: 40px;
   border-radius: 50px;
   transition: 0.3s ease-in-out;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 25px;
 }
-.accountingsoftware-btn:hover{
+
+.accountingsoftware-btn:hover {
   background-color: var(--white);
   color: var(--primary-color);
 }
-.accountingsoftware-icon{
+
+.accountingsoftware-icon {
   color: var(--primary-color);
   background-color: var(--white);
   border-radius: 50%;
- padding: 0px 2px;
- font-size: 14px;
- margin-left: 10px;
+  padding: 0px 2px;
+  font-size: 14px;
+  margin-left: 10px;
 }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .accountingsoftware-heading {
+    font-size: 2rem;
+  }
+
+  .accountingsoftware-btn {
+    width: 100%;
+    /* Make button full width */
+  }
+
+  .img-fluid {
+    margin-top: 20px;
+  }
+}
+
+/* FIRST SECTION  END  */
+
+
+/* SECOND SECTION  START CSS  */
+.review-section {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.review-img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-top: 35px;
+}
+
+
+@media (max-width: 768px) {
+  .review-img {
+    width: 60%;
+  }
+}
+
+/* SECOND SECTION  END */
+
+/* THIRD SECTION  START CSS */
+
+.Software-Designed-section {
+  padding: 30px 0;
+
+}
+
+.Accounting-Software-Designed-h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.Accounting-Software-Designed-p {
+  text-align: center;
+  font-size: 17px;
+  color: #212529;
+  margin-top: 20px;
+}
+
+.Accounting-Software-Designed-inner-p {
+  text-align: left;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+
+/* THIRD SECTION  END */
+
+/*  FOUR SECTION  START  CSS */
+.icons-content {
+  list-style: none;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.icons-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.icons-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  margin-bottom: 20PX;
+}
+
+.icon-style {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 50%;
+
+}
+
+.icons-section-main {
+  margin-top: 20px;
+}
+
+.Accounting-Software-Designed-img {
+  max-width: 100%;
+  height: auto;
+  gap: 0;
+}
+
+.learn-more-link p {
+  display: flex;
+  gap: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 3vh;
+  color: var(--primary-color);
+
+}
+
+.hover-letter {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.learn-more-link:hover .hover-letter {
+  animation: bounce 0.5s infinite alternate ease-in-out;
+  color: var(--primary-color);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+
+  100% {
+    transform: translateY(-5px) scale(1.1);
+  }
+}
+
+.hover-letter:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+
+.hover-letter:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+/*  FOUR SECTION END  CSS */
+
+/*  SIX SECTION  START CSS  */
+.Business-Expence-p {
+  text-align: center;
+  font-size: 19px;
+  color: #212529;
+  margin-top: 20px;
+}
+
+/*  SIX SECTION  END CSS  */
+
+/*  SEVEN SECTION  START CSS  */
+.Insightful-Finacial-Reporting-p {
+  font-size: 18px;
+}
+
+/*  EIGHT SECTION START CSS  */
+.Bookkeeping-Software-Section {
+  padding: 70px 0;
+}
+
+.ProfitBooks-p {
+  font-size: 19px;
+  margin-top: 20px;
+}
+
+/*  EIGHT SECTION END CSS  */
+
+/*  NINE SECTION START  CSS */
