@@ -12,59 +12,19 @@ import PurchaseManagement from "../images/hero/PurchaseManagement.webp"
 import VendorManagement from "../images/hero/VendorManagement.webp"
 import BankReconciliation from "../images/hero/BankReconciliation.webp"
 import InventorymanagementReports from "../images/hero/InventorymanagementReports.webp"
-import { IoIosArrowForward } from "react-icons/io"; const Hero = () => {
+import { SlArrowRightCircle } from "react-icons/sl";
+
+ const Hero = () => {
   return (
     <>
 
-      {/* <section className="campaign-section container py-5">
-        <div className="row align-items-center">
-          <div className="col-md-6">
-            <h2 className="fw-bold">Automatic e-way bill</h2>
-            <p className="mb-3">
-              Now, Get an e-way bill automatically when you create an invoice.
-            </p>
-            <div className="d-flex gap-3">
-              <Link href="" className="btn2 ">
-                GET STARTED FREE.
-              </Link>
-              <button className="btn btn-outline-secondary">
-                Watch demo video
-              </button>
-            </div>
-          </div>
-          <div className="col-md-6 text-center truck-container">
-            <img
-              src={TruckImage}
-              alt="e-way bill image hisab"
-              className="truck img-fluid"
-            />
-            <img
-              src={WheelImage1}
-              alt="e-way bill wheel hisab"
-              className="wheel wheel-left"
-            />
-            <img
-              src={WheelImage2}
-              alt="e-way bill wheel hisab"
-              className="wheel wheel-right"
-            />
-          </div>
-        </div>
-
-
-      </section> */}
-      {/* <div className="road-container ">
-        <div className="road-img">
-          
-          </div>
-        </div> */}
-
-      {/* FIRST SECTION  START */}
+     
+      
       <section className="">
         <div className="container-fluid">
           <div className="row mt-5">
-            <div className="col-md-6" style={{ paddingLeft: "25px" }}>
-              <h1 className="accountingsoftware-heading">#1 Free Accounting Software <span>For  Small Business <br /> Owners</span></h1>
+            <div className="col-md-6" style={{ paddingLeft: "25px", paddingTop:"25px" }}>
+              <h1 className="accountingsoftware-heading">#1 Free Accounting Software <span>For  Small Business  Owners</span></h1>
               <p className="accountingsoftware-p">ProfitBooks simplifies business accounting, invoicing, inventory tracking <br />and reporting using one powerful interface.</p>
               <p className="accountingsoftware-p">100% FREE accounting software. No strings attached.</p>
               <button className="accountingsoftware-btn">Create Your FREE Account Now <span className="accountingsoftware-icon"><FaArrowRight /></span></button>
@@ -84,7 +44,7 @@ import { IoIosArrowForward } from "react-icons/io"; const Hero = () => {
       <section className="review-section">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-md-8 col-lg-6 text-center">
+            <div className="col-md-8 col-lg-6 text-center com-images">
               <img
                 src={ReviewRatings}
                 className="img-fluid review-img"
@@ -134,23 +94,23 @@ import { IoIosArrowForward } from "react-icons/io"; const Hero = () => {
               <div className="icons-section">
                 <ul className="icons-section-main">
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
+                    <SlArrowRightCircle  className="icon-style" />
                     Estimates & Sales Orders
                   </li>
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
+                    <SlArrowRightCircle  className="icon-style" />
                     Automated Email Reminders
                   </li>
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
+                    <SlArrowRightCircle  className="icon-style" />
                     Payment Gateway Integrations
                   </li>
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
+                    <SlArrowRightCircle  className="icon-style" />
                     Multi-user, Multi-currency system
                   </li>
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
+                    <SlArrowRightCircle  className="icon-style" />
                     In-depth Sales Reports
                   </li>
                 </ul>
@@ -182,23 +142,23 @@ import { IoIosArrowForward } from "react-icons/io"; const Hero = () => {
               <div className="icons-section">
                 <ul className="icons-section-main">
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
+                    <SlArrowRightCircle  className="icon-style" />
                     Invoice & Purchase Management
                   </li>
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
+                    <SlArrowRightCircle  className="icon-style" />
                     Sales Order Management
                   </li>
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
+                    <SlArrowRightCircle  className="icon-style" />
                     Manage Multiple Warehouses
                   </li>
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
+                    <SlArrowRightCircle  className="icon-style" />
                     Mult-user, Multi-currency system
                   </li>
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
+                    <SlArrowRightCircle  className="icon-style" />
                     In-depth Inventory Reports
                   </li>
                 </ul>
@@ -236,23 +196,23 @@ import { IoIosArrowForward } from "react-icons/io"; const Hero = () => {
               <div className="icons-section">
                 <ul className="icons-section-main">
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
+                    <SlArrowRightCircle  className="icon-style" />
                     Invoice & Purchase Management
                   </li>
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
+                    <SlArrowRightCircle  className="icon-style" />
                     Sales Order Management
                   </li>
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
+                    <SlArrowRightCircle  className="icon-style" />
                     Manage Multiple Warehouses
                   </li>
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
+                    <SlArrowRightCircle  className="icon-style" />
                     Mult-user, Multi-currency system
                   </li>
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
+                    <SlArrowRightCircle  className="icon-style" />
                     In-depth Inventory Reports
                   </li>
                 </ul>
@@ -309,24 +269,24 @@ import { IoIosArrowForward } from "react-icons/io"; const Hero = () => {
               <div className="icons-section">
                 <ul className="icons-section-main">
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
-                    Import Bank Statements for easy Bank Reconciliation
+                    <SlArrowRightCircle  className="icon-style" />
+                    Import Bank Statements for easy Bank
                   </li>
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
+                    <SlArrowRightCircle  className="icon-style" />
                     GST Return Filing and Tax Calculations
                   </li>
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
+                    <SlArrowRightCircle  className="icon-style" />
                     Manual Journal Entries
                   </li>
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
+                    <SlArrowRightCircle  className="icon-style" />
                     Invite Auditors
                   </li>
                   <li className="icons-content">
-                    <IoIosArrowForward className="icon-style" />
-                    One-click Financial Reports Including Profit & Loss, Balance Sheet, and Cash Flow Statements.
+                    <SlArrowRightCircle  className="icon-style" />
+                    One-click Financial Reports Including Profit.
                   </li>
                 </ul>
               </div>

@@ -20,12 +20,12 @@ function Navbar() {
         </Link>
 
         {/* Toggle button for mobile */}
-        <button 
-          className="navbar-toggler" 
-          type="button" 
-          onClick={openNav} 
-          aria-controls="navbarNav" 
-          aria-expanded={nav ? "true" : "false"} 
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={openNav}
+          aria-controls="navbarNav"
+          aria-expanded={nav ? "true" : "false"}
           aria-label="Toggle navigation"
         >
           <FiMenu size={28} />
@@ -49,7 +49,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-      
+
       {/* Mobile Sidebar (Fixed at the top) */}
       {nav && (
         <div className="mobile-navbar" style={{
@@ -80,7 +80,10 @@ function Navbar() {
           </button>
           <ul className="mobile-navbar__links" style={{ listStyle: "none", padding: 0, textAlign: "center" }}>
             <li><Link onClick={openNav} to="/features" style={{ color: "white", fontSize: "24px", margin: "10px 0" }}>Features</Link></li>
-            <li><Link onClick={openNav} to="/contact" style={{ color: "white", fontSize: "24px", margin: "10px 0" }}>Contact</Link></li>
+            <li style={{ color: "white", fontSize: "24px", margin: "10px 0" }} onClick={openNav}>
+              <Link className="nav-link" to="/pricing">Pricing</Link>
+            </li>
+          
             <li><Link onClick={openNav} to="/" style={{ color: "white", fontSize: "24px", margin: "10px 0" }}>Sign In</Link></li>
             <li><Link onClick={openNav} to="/" style={{ color: "white", fontSize: "24px", margin: "10px 0" }}>Register</Link></li>
           </ul>

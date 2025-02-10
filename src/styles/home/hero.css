@@ -6,6 +6,9 @@
 
 
 /* FIRST SECTION  START  CSS*/
+.container-fluid{
+  padding: 25px;
+}
 .accountingsoftware-heading span {
   color: gray;
 }
@@ -79,21 +82,22 @@
 
 /* SECOND SECTION  START CSS  */
 .review-section {
-  padding: 30px 0;
+  padding: 50px 0;
   text-align: center;
 }
 
 .review-img {
+  padding: 50px 0;
   max-width: 100%;
   width: 100%;
-  height: auto;
-  margin-top: 35px;
 }
 
 
 @media (max-width: 768px) {
   .review-img {
-    width: 60%;
+    padding: 0px 0;
+
+    width: 100%;
   }
 }
 
@@ -143,15 +147,15 @@
 
 .icons-content {
   display: flex;
-  align-items: center;
   gap: 10px;
-  font-size: 18px;
+  /* padding-right: 5px; */
+  align-items: center;
+  font-size: 16px;
   margin-bottom: 20PX;
 }
 
 .icon-style {
-  font-size: 14px;
-  font-weight: 700;
+   font-size: 18px;
   color: var(--white);
   background-color: var(--primary-color);
   border-radius: 50%;
