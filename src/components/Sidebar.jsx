@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-scroll";
 import {
   FaBars, FaTimes, FaFileInvoice, FaMoneyBillWave, FaAddressBook, FaCreditCard,
@@ -8,29 +8,39 @@ import {
 
 const Sidebar = ({ activeSection }) => {
   const [isFixed, setIsFixed] = useState(false);
-  const [isOpen, setIsOpen] = useState(false); // Sidebar toggle for mobile
+  const [isOpen, setIsOpen] = useState(false);
+  const sidebarRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      const triggerHeight = 100;
-      setIsFixed(window.scrollY > triggerHeight);
+      setIsFixed(window.scrollY > 100);
+    };
+
+    const handleClickOutside = (event) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
 
   return (
     <>
       {/* Mobile Toggle Button */}
       <div className="mobile-sidemenu">
-      <button className="menu-btn" onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? <FaTimes /> : <FaBars />}
-      </button>
-
+        <button className="menu-btn" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <FaTimes /> : <FaBars />}
+        </button>
       </div>
 
-      <div className={`sidebar ${isFixed ? "fixed-sidebar" : ""} ${isOpen ? "open" : ""}`}>
+      <div ref={sidebarRef} className={`sidebar ${isFixed ? "fixed-sidebar" : ""} ${isOpen ? "open" : ""}`}>
         <nav>
           <ul>
             <li>
