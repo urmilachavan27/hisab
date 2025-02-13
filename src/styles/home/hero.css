@@ -6,9 +6,19 @@
 
 
 /* FIRST SECTION  START  CSS*/
-.container-fluid{
+.container-fluid {
   padding: 25px;
 }
+
+.First-Software-Section {
+  background: -webkit-linear-gradient(top, rgb(235, 246, 255) 77%, rgb(255, 255, 255) 100%);
+  /* background: -webkit-linear-gradient(top, rgb(134, 176, 216) 0%, rgb(139, 95, 95) 98%) !important; */
+  /* background: linear-gradient(to bottom, rgb(234, 245, 255) 0%, rgb(255, 255, 255) 98%) !important; */
+  width: 100%;
+  min-height: 100vh;
+  /* padding: 50px 0;  */
+}
+
 .accountingsoftware-heading span {
   color: gray;
 }
@@ -155,7 +165,7 @@
 }
 
 .icon-style {
-   font-size: 18px;
+  font-size: 18px;
   color: var(--white);
   background-color: var(--primary-color);
   border-radius: 50%;
@@ -175,42 +185,21 @@
 .learn-more-link p {
   display: flex;
   gap: 2px;
+  color: var(--primary-color);
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 500;
   cursor: pointer;
-  margin-top: 3vh;
-  color: var(--primary-color);
-
-}
-
-.hover-letter {
+  /* margin-top: 3vh; */
   display: inline-block;
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  position: relative;
+  cursor: pointer;
+  transition: .03s ease-in;margin-bottom: 0px;
 }
 
-.learn-more-link:hover .hover-letter {
-  animation: bounce 0.5s infinite alternate ease-in-out;
-  color: var(--primary-color);
+.learn-more-link p:hover {
+  border-bottom: 1px solid #2471a3;
+  
 }
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0) scale(1);
-  }
-
-  100% {
-    transform: translateY(-5px) scale(1.1);
-  }
-}
-
-.hover-letter:nth-child(odd) {
-  animation-delay: 0.1s;
-}
-
-.hover-letter:nth-child(even) {
-  animation-delay: 0.2s;
-}
-
 /*  FOUR SECTION END  CSS */
 
 /*  SIX SECTION  START CSS  */
@@ -234,10 +223,560 @@
 }
 
 .ProfitBooks-p {
-  font-size: 19px;
+  font-size: 17px;
   margin-top: 20px;
 }
 
 /*  EIGHT SECTION END CSS  */
 
 /*  NINE SECTION START  CSS */
+.Tax-and-GST-section {
+  background: -webkit-linear-gradient(top, rgb(234, 245, 255) 0%, rgb(255, 255, 255) 98%);
+  width: 100%;
+  /* Full width */
+  padding: 50px 20px;
+  /* Adjusted padding for better spacing */
+}
+
+.Tax-and-GST-h2 {
+  text-align: center;
+  font-size: 28px;
+  /* Smaller font for mobile */
+  font-weight: 600;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.Tax-and-GST-h3 {
+  color: var(--primary-color);
+  font-size: 18px;
+  /* Adjust font size for smaller screens */
+  text-align: center;
+}
+
+.Tax-and-GST-p {
+  margin-top: 15px;
+  font-size: 14px;
+  /* Smaller font */
+  line-height: 24px;
+  /* Better readability */
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .Tax-and-GST-h2 {
+    font-size: 32px;
+  }
+
+  .Tax-and-GST-h3 {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .Tax-and-GST-p {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-lg-4,
+  .col-md-4 {
+    width: 100%;
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+/*  NINE SECTION END  CSS */
+
+/*  TEN SECTION START CSS */
+.Outer-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  margin: 20px auto;
+  margin-top: 5vh;
+}
+
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--primary-color) !important;
+  font-weight: 400;
+}
+
+.ant-tabs-tab:hover {
+  color: var(--primary-color) !important;
+}
+
+.ant-tabs-ink-bar {
+  background-color: var(--primary-color) !important;
+}
+
+.ant-tabs-tab {
+  color: #333 !important;
+  font-size: 17px !important;
+
+}
+
+.ant-tabs-nav {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.Invoicing-tab-p {
+  font-size: 16px;
+  color: var(--black);
+  font-weight: 600;
+  text-align: left;
+}
+
+.Invoicing-icons-content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 20PX;
+  font-weight: 500;
+}
+
+/* Responsive shadow effect */
+@media (max-width: 767px) {
+  .inner-section {
+    padding: 15px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.Explore-Feature-btn {
+  background: linear-gradient(135deg, #2471a3, #1b4f72);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /* Space between icon and text */
+}
+
+.Explore-Feature-btn .search-icon {
+  font-size: 18px;
+  font-weight: 600 !important;
+  margin-top: 2px;
+  /* Adjust icon size */
+  display: flex;
+  align-items: center;
+}
+
+/* Hover effect  */
+.Explore-Feature-btn:hover {
+  background: linear-gradient(135deg, #1b4f72, #2471a3);
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(36, 113, 163, 0.5);
+}
+
+/* Gradient animation ke liye */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*  TEN SECTION END CSS */
+
+
+/* ELEVEN SECTION START CSS */
+.All-The-Ways-h4 {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+/* ELEVEN SECTION END CSS */
+
+/*  TWELEVE SECTION START CSS */
+.Remote-Bookkeeping-Service {
+  background-color: var(--primary-color);
+  margin-top: 5vh;
+
+}
+
+.Remote-Bookkeeping-h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--white);
+  padding-top: 5vh;
+  /* width: 50%; */
+}
+
+.Remote-Bookkeeping-p {
+  text-align: center;
+  color: var(--white);
+  font-size: 20px;
+}
+
+.Remote-Bookkeeping-Service-p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.Remote-Bookkeeping-icons-content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 20PX;
+  font-weight: 500;
+  color: whitesmoke;
+}
+
+.Remote-Bookkeeping-icon-style {
+  color: whitesmoke;
+  font-size: 13px;
+}
+
+.Remote-Bookkeeping-main {
+  margin-top: 5vh;
+}
+
+.btn-grp {
+  display: flex;
+  margin-top: 5vh;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 5vh;
+}
+
+.learn-more-btn {
+  padding: 14px 18px;
+  color: var(--black);
+  font-weight: 500;
+  font-size: 14px;
+  background-color: var(--white);
+  border: none;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.learn-more-btn-icon {
+  color: var(--white);
+  background-color: var(--black);
+  border-radius: 50%;
+  padding: 0px 2px;
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+/*  TWELEVE SECTION END CSS */
+
+/*  THIRTEEN SECTION START css */
+.Our-Success-p {
+  font-size: 17px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.Our-Success-li {
+  display: flex;
+  text-align: left;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 20PX;
+  font-weight: 500;
+  display: list-item;
+  /* This ensures bullets appear */
+}
+
+.Our-Success-ul {
+  margin-top: 20px;
+  padding-left: 20px;
+  /* Ensure indentation */
+  list-style-type: disc;
+  /* Bullet points */
+  font-size: 20px;
+}
+
+.app-store-img {
+  display: flex;
+  gap: 20px;
+  /* Space between images */
+  align-items: center;
+  /* Align images vertically */
+  justify-content: flex-start;
+  /* Align images to the left */
+}
+
+/*  THIRTEEN SECTION END CSS */
+
+/*  FOURTEEN SECTION START CSS */
+.Expert-Tips-section {
+  background: linear-gradient(to bottom, rgb(229, 244, 255) 0%, rgb(255, 255, 255) 99%);
+  padding: 50px 0;
+  /* Add some padding */
+  width: 100%;
+  /* Full width */
+  margin-top: 5vh;
+}
+
+
+.zoom-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  /* Smooth zoom effect */
+  cursor: pointer;
+}
+
+.zoom-image:hover {
+  transform: scale(1.1);
+  /* Zoom effect on hover */
+}
+
+
+.Expert-Tips-h2 {
+  font-size: 35px;
+  color: black;
+  font-weight: 600;
+  text-align: center;
+}
+
+.Expert-Tips-p {
+  font-size: 20px;
+  font-weight: 700;
+  /* margin-top: 20px; */
+  padding: 20px;
+  color: #474747;
+}
+
+.Expert-Tips-p:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.Experts-Tips-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Center vertically (if needed) */
+  width: 100%;
+  /* Full width to keep it centered */
+  margin-top: 20px;
+  /* Optional: Adjust spacing */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .Expert-Tips-section {
+    padding: 30px 0;
+    /* Reduce padding for small screens */
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/*  FOURTEEN SECTION END CSS */
+
+/*  FIFTEEN SECTION START CSS */
+
+
+.Trusted-By-Over-h2 {
+  font-size: 35px;
+  color: black;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+}
+
+.trusted-card {
+  background: rgba(136, 136, 136, 0.08);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.trusted-card:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-content {
+  font-size: 17px;
+  margin-top: 25px;
+}
+
+.trusted-people-name {
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.trusted-people-name:hover {
+  color: var(--primary-color);
+}
+
+.start-icon {
+  margin-top: 15px;
+}
+
+.start-icon-style {
+  font-size: 20px;
+  color: gold;
+}
+
+/*  FIFTEEN SECTION END CSS */
+
+/*  SIXTEEN SECTION START CSS */
+.Free-Accounting-Software-section {
+  padding: 80px 0;
+  margin-top: 5vh;
+
+}
+
+.Free-Accounting-Software-h2 {
+  font-size: 35px;
+  color: black;
+  font-weight: 600;
+  text-align: center;
+}
+
+.start-free-h3 {
+  font-size: 30px;
+}
+
+.start-free-p {
+  font-size: 18px;
+}
+
+.start-free-btn {
+  padding: 14px 20px;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 17px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  margin-top: 20px;
+  max-width: 280px;
+}
+
+.start-free-btn-icon {
+  color: var(--primary-color);
+  background-color: var(--white);
+  border-radius: 50px;
+  padding: 3px 4px;
+  margin-right: 10px;
+
+}
+
+.start-free-card {
+  background: #ebebeb;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+@media (max-width: 768px) {
+  .start-free-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 100%;
+  }
+}
+
+/*  SIXTEEN SECTION END CSS */
+
+/*  SEVENTEEN SECTION START CSS */
+
+.Frequently-Asked-Questions-h2 {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.custom-collapse {
+  /* background-color: #f9f9f9 !important;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; */
+  border: none;
+}
+
+.custom-collapse .ant-collapse-item {
+  border-bottom: none !important;
+}
+
+.custom-collapse .ant-collapse-header {
+  font-size: 19px;
+  font-weight: 500;
+  background-color: #fff !important;
+  padding: 12px 16px !important;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  color: #212529;
+}
+
+.custom-collapse .ant-collapse-header:hover {
+  background-color: #f0f0f0 !important;
+  cursor: pointer;
+}
+
+.custom-collapse .ant-collapse-content-box {
+  font-size: 16px;
+  padding: 16px;
+  background: #fff !important;
+  border-radius: 8px;
+}
+
+.faq-icon {
+  font-size: 18px;
+  color: var(--primary-color) !important;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.collapse-data {
+  font-size: 18px;
+}
+
+
+/*  SEVENTEEN SECTION END CSS */

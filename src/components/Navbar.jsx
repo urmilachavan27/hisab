@@ -79,6 +79,7 @@ function Navbar() {
             <FiX size={28} />
           </button>
           <ul className="mobile-navbar__links" style={{ listStyle: "none", padding: 0, textAlign: "center" }}>
+            <li><Link onClick={openNav} to="/" style={{ color: "white", fontSize: "24px", margin: "10px 0" }}>Home</Link></li>
             <li><Link onClick={openNav} to="/features" style={{ color: "white", fontSize: "24px", margin: "10px 0" }}>Features</Link></li>
             <li style={{ color: "white", fontSize: "24px", margin: "10px 0" }} onClick={openNav}>
               <Link className="nav-link" to="/pricing">Pricing</Link>
